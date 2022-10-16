@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- New Video Source -- Mixkit -- https://mixkit.co -->
+
+    <!-- Cars on Rainy Street -->
+    <!-- https://assets.mixkit.co/videos/preview/mixkit-cars-heading-through-heavy-rain-27704-large.mp4 -->
+    <!-- Thunderstorm -->
+    <!-- https://assets.mixkit.co/videos/preview/mixkit-thunderstorm-at-night-4422-large.mp4 -->
+    <!-- Car Driving -->
+    <!-- https://assets.mixkit.co/videos/preview/mixkit-highway-in-the-middle-of-a-mountain-range-4633-large.mp4 -->
+    <div class="player">
+        <video src="Video/1080P.mp4" class="video"
+            playsinline></video>
+        <!-- Show controls -->
+        <div class="show-controls">
+            <!-- Controls container -->
+            <div class="controls-container">
+                <!-- Progress bar -->
+                <div class="progress-range" title="seek">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="control-group">
+                    <!-- Left Controls -->
+                    <div class="controls-left">
+                        <!-- Play/Pause -->
+                        <div class="play-controls">
+                            <i class="fa-solid fa-play" title="play" id="play-btn"></i>
+                        </div>
+                        <!-- Volume -->
+                        <div class="volume">
+                            <div class="volume-icon">
+                                <i class="fa-solid fa-volume-up" title="mute" id="volume-icon"></i>
+                            </div>
+                            <div class="volume-range" title="Change volume">
+                                <div class="volume-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Controls -->
+                    <div class="controls-right">
+                        <!-- Quality -->
+                        <div class="quality" title="Quality">
+                            <select name="Quality" class="player-quality" id="">
+                                <option value="Video/8K.mp4">8K</option>
+                                <option value="Video/4K.mkv">4K</option>
+                                <option value="Video/2K.mp4">2K</option>
+                                <option value="Video/1080p.mp4" selected>1080p</option>
+                                <option value="Video/720p.mp4">720p </option>
+                                <option value="Video/480p.mp4">480p</option>
+                                <option value="Video/360p.mp4">360p</option>
+                                <option value="Video/144p.mp4">144p</option>
+                            </select>
+                        </div>
+                        <!-- Speed -->
+                        <div class="speed" title="Playback Rate">
+                            <select name="playbackRate" class="player-speed" id="">
+                                <option value="0.25">0.25 x</option>
+                                <option value="0.5">0.5 x</option>
+                                <option value="0.75">0.75 x</option>
+                                <option value="1" selected>1 x</option>
+                                <option value="1.25">1.25 x</option>
+                                <option value="1.5">1.5 x</option>
+                                <option value="1.75">1.75 x</option>
+                                <option value="2">2 x</option>
+                            </select>
+                        </div>
+                        <!-- Time -->
+                        <div class="time">
+                            <span class="time-period">00:00</span>
+                            <span class="time-duration">20:00</span>
+                        </div>
+                        <!-- Fullscreen -->
+                        <div class="fullscreen">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/06b0743b9f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
